@@ -48,8 +48,13 @@ end
 
 # from the rubyonrails tutorial website
 group :test do
+  #Add green and red indicator colors to the test on terminal
   gem 'minitest-reporters', '1.0.5'
+
+  #Remove some test log from dependecies that we specify, in config/initializers/backtrace_silencers.rb
   gem 'mini_backtrace',     '0.1.3'
+
+  #Autotest, includes a new Guardfile configuration, changes on .gitignore to ignore spring/
   gem 'guard-minitest',     '2.3.1'
 end
 
